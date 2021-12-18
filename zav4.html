@@ -1,0 +1,54 @@
+<html>
+<head>
+<title></title>
+<style>
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+div{width:50px; height:50px; position:relative; animation:blok 2s infinite ease-in-out;}
+span{width:50px; height:50px; position:absolute;  top:0; left:0; border:4px solid #0B1B48;}
+
+@keyframes blok{ 
+0%{transform:rotate(-45deg);} 
+50%{transform:rotate(-135deg);} 
+100%{transform:rotate(-225deg);}
+}
+.sp1{animation:span1 2s infinite ease-in-out;}
+.sp2{animation:span2 2s infinite ease-in-out;}
+.sp3{animation:span3 2s infinite ease-in-out;}
+.sp4{animation:span4 2s infinite ease-in-out;}
+@keyframes span1 {
+ 0% {transform:translate(0);} 
+ 50%{transform:translate(-50px, 0); border:4px solid #EE4D68;} 
+ 100%{transform:translate(0);}
+ }
+ @keyframes span2 {
+ 0% {transform:translate(0);} 
+ 50%{transform:translate(50px, 0); border:4px solid #875678;} 
+ 100%{transform:translate(0);}
+ }
+ @keyframes span3 {
+ 0% {transform:translate(0);} 
+ 50%{transform:translate(0, -50px); border:4px solid #FF9900;} 
+ 100%{transform:translate(0);}
+ }
+ @keyframes span4 {
+ 0% {transform:translate(0);} 
+ 50%{transform:translate(0, 50px); border:4px solid #00E4F6;} 
+ 100%{transform:translate(0);}
+ }
+</style>
+<body>
+<div class="main">
+<span class="sp1"></span>
+<span class="sp2"></span>
+<span class="sp3"></span>
+<span class="sp4"></span>
+</div>
+</body>
+</html>
